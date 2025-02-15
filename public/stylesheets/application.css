@@ -1,0 +1,155 @@
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button:hover {
+  -webkit-filter: brightness(85%);
+  cursor: pointer;
+}
+
+button:active {
+  position: relative;
+  top: 2px;
+}
+
+.game-container {
+  margin-top: -36px;
+}
+
+.game-title {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: green;
+  font-size: 70px;
+  font-family: 'Bungee', cursive;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.tile {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colored-dot {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.path-tile, .path-segment {
+  width: 100%;
+  height: 100%;
+}
+
+.reset-btn, .about-btn {
+  padding: 14px;
+  border-radius: 9px;
+  border: none;
+  font-family: 'Bungee', cursive;
+  font-weight: bold;
+  font-size: 15px;
+  background: #c2ff02;
+  margin-bottom: 10px;
+  height: 50%;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.level-header {
+  color: white;
+  font-family: 'Bungee', cursive;
+}
+
+.modal-screen {
+  z-index: 998;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  background: rgba(0, 0, 0, .3);
+}
+
+.modal-content {
+  z-index: 999;
+  position: absolute;
+  background: #98ff1c;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 20px;
+  width: 300px;
+  height: 230px;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.you-won-text {
+  font-family: 'Bungee', cursive;
+  font-size: 15px;
+}
+
+.play-again-btn, .next-level-btn, .start-game-over-btn, .github-link {
+  cursor: pointer;
+  padding: 15px;
+  background: white;
+  border: 2px dashed #9C27B0;
+  font-size: 16px;
+}
+
+.play-again-btn {
+  margin-right: 11px;
+}
+
+.github, .linkedin {
+  height: 43px;
+  margin-top: 4px;
+}
+
+.linkedin {
+  float: right;
+}
+
+.valid-path {
+  border: 3px solid green;
+}
+
+.cursor-reset {
+  cursor: default;
+}
+
+/* .pop-up {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  display: none;
+} */
